@@ -11,22 +11,30 @@
             font-family: Arial, sans-serif;
             text-align: center;
         }
-        img {
-            max-width: 400px;
-            margin: 20px auto;
-            display: block;
+        .images {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 30px;
+        }
+        .images img {
+            max-width: 300px;
+            border-radius: 8px;
         }
         .sold-out {
             font-size: 24px;
             color: red;
-            margin-top: 20px;
+            margin-top: 30px;
         }
     </style>
 </head>
 <body>
     <h1>HBHO T-Shirt</h1>
-    <img src="Screenshot 2025-04-09 at 1.27.42 PM.jpg" alt="T-shirt Front">
-    <img src="Screenshot 2025-04-09 at 1.28.07 PM.jpg" alt="T-shirt Back">
+    <div class="images">
+        <img src="tshirt-front.jpg" alt="T-shirt Front">
+        <img src="tshirt-back.jpg" alt="T-shirt Back">
+    </div>
     <div class="sold-out">SOLD OUT</div>
+    <a href="index.html" style="color:white;">← Back to Merch</a>
 </body>
 </html>
