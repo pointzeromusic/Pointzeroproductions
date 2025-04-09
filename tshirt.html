@@ -3,29 +3,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>T-Shirt - HBHO NOW Merch</title>
+    <title>Point Zero T-Shirt</title>
     <style>
         body {
-            background-color: #111;
-            color: #fff;
+            background-color: black;
+            color: white;
             font-family: Arial, sans-serif;
             text-align: center;
         }
-        img {
-            width: 300px;
-            margin: 20px;
+        .images {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding-top: 2rem;
         }
-        .soldout {
+        .images img {
+            max-width: 300px;
+            border-radius: 8px;
+        }
+        .sold-out {
             font-size: 24px;
             color: red;
+            margin-top: 2rem;
         }
     </style>
 </head>
 <body>
-    <h1>POINTZERO T-Shirt</h1>
-    <img src="tshirt-front.png" alt="Front">
-    <img src="tshirt-back.png" alt="Back">
-    <div class="soldout">SOLD OUT</div>
-    <a href="index.html" style="color:white;">← Back to Merch</a>
+    <h1>Point Zero T-Shirt</h1>
+    <div class="images">
+        <img src="tshirt-front.jpg" alt="Front">
+        <img src="tshirt-back.jpg" alt="Back">
+    </div>
+    <div class="sold-out">SOLD OUT</div>
+    <a href="merch.html" style="color:white;">← Back to Merch</a>
 </body>
 </html>

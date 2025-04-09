@@ -30,15 +30,3 @@ nav a:hover {
     display: block;
     margin: 20px 0;
 }
-
-.merch-item {
-    margin: 30px auto;
-    padding: 20px;
-    border-top: 1px solid #555;
-    max-width: 600px;
-}
-.merch-image {
-    width: 80%;
-    max-width: 300px;
-    margin-top: 15px;
-}
