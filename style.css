@@ -1,0 +1,33 @@
+
+body {
+    background-color: #000;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+.logo-container img {
+    max-width: 300px;
+    margin: 20px auto;
+    display: block;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+#about {
+    margin-top: 40px;
+}
+
+#about h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+#about p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
