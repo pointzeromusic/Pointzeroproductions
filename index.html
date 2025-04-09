@@ -6,59 +6,43 @@
     <title>HBHO NOW Merch</title>
     <style>
         body {
-            background-color: #111;
-            color: #fff;
+            background-color: #0f0f0f;
+            color: white;
             font-family: Arial, sans-serif;
             text-align: center;
-            margin: 0;
         }
-        .header {
-            background-color: #000;
+        .item {
+            display: inline-block;
+            margin: 40px;
+            background: #1c1c1c;
             padding: 20px;
-        }
-        .header h1 {
-            color: red;
-        }
-        .products {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin: 20px;
-        }
-        .product {
-            margin: 20px;
-            background-color: #1a1a1a;
-            padding: 10px;
             border-radius: 10px;
-            width: 300px;
         }
-        .product img {
-            width: 100%;
-            border-radius: 10px;
+        .item img {
+            max-width: 300px;
+            display: block;
+            margin: 0 auto 10px;
         }
         .button {
-            background-color: black;
-            border: 1px solid white;
-            color: white;
-            padding: 10px 20px;
+            display: block;
             margin-top: 10px;
-            cursor: pointer;
+            padding: 10px;
+            background: black;
+            color: white;
+            text-decoration: none;
+            border: 1px solid white;
         }
     </style>
 </head>
 <body>
-    <div class="header">
-        <h1>POINTZERO</h1>
+    <h1>HBHO NOW Merch</h1>
+    <div class="item">
+        <img src="Screenshot 2025-04-09 at 1.27.42 PM.jpg" alt="T-shirt Front">
+        <a class="button" href="shirt.html">QUICK VIEW</a>
     </div>
-    <div class="products">
-        <div class="product">
-            <img src="tshirt-front.png" alt="T-Shirt">
-            <a href="tshirt.html"><div class="button">QUICK VIEW</div></a>
-        </div>
-        <div class="product">
-            <img src="bracelet.png" alt="Rubber Bracelets">
-            <div class="button">COMING SOON – $2.00</div>
-        </div>
+    <div class="item">
+        <img src="Screenshot 2025-04-09 at 1.49.42 PM.jpg" alt="Bracelets">
+        <a class="button" href="bracelets.html">QUICK VIEW</a>
     </div>
 </body>
 </html>
