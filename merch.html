@@ -2,24 +2,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
     <title>Merch - Point Zero</title>
-    <link rel="stylesheet" href="style.css" />
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #111; color: white; text-align: center; padding: 20px; }
+        img { max-width: 400px; width: 90%; margin: 10px auto; display: block; }
+        h1 { font-size: 2em; margin-bottom: 20px; }
+        .sold-out { color: red; font-weight: bold; margin-top: 5px; }
+    </style>
 </head>
 <body>
-    <h1 class="site-title">Merch</h1>
-    <nav>
-        <a href="index.html">Home</a> |
-        <a href="music.html">Music</a> |
-        <a href="merch.html">Merch</a> |
-        <a href="about.html">About</a>
-    </nav>
-    <div class="merch-item">
-        <h2>Point Zero Band Tee</h2>
-        <p>Status: <strong>Sold Out</strong></p>
-        <p>(Front: Logo | Back: Band name)</p>
-        <img src="tshirt-placeholder.png" alt="Band T-shirt" class="merch-image" />
+    <h1>Merch</h1>
+    <div>
+        <img src="merch/shirt_front.png" alt="T-Shirt Front">
+        <img src="merch/shirt_back.png" alt="T-Shirt Back">
+        <div class="sold-out">T-Shirt - SOLD OUT</div>
     </div>
 </body>
 </html>
