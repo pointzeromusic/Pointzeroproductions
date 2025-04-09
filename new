@@ -1,0 +1,6 @@
+.full-width-logo {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+<img src="logo-original.png" alt="Point Zero Logo" class="full-width-logo" />
