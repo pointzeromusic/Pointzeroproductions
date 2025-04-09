@@ -18,16 +18,24 @@ h1 {
     font-weight: bold;
 }
 
-#about {
-    margin-top: 40px;
+nav {
+    margin-bottom: 20px;
+    font-size: 1.2em;
 }
 
-#about h2 {
-    font-size: 2em;
-    margin-bottom: 10px;
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
 }
 
-#about p {
+nav a:hover {
+    text-decoration: underline;
+}
+
+p {
     font-size: 1.2em;
     line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
 }
