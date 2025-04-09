@@ -1,0 +1,22 @@
+#about {
+  padding: 3em 2em;
+  background-color: #121212;
+  color: #fff;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: auto;
+}
+
+#about h2 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+  text-align: center;
+  font-weight: bold;
+  color: #f2f2f2;
+}
+
+#about p {
+  font-size: 1.1em;
+  margin-bottom: 1em;
+  text-align: center;
+}
