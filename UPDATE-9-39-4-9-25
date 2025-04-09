@@ -1,0 +1,180 @@
+from zipfile import ZipFile
+import os
+
+# Directory and file content for updated site with About section
+about_dir = "/mnt/data/pointzeroproductions_about"
+os.makedirs(about_dir, exist_ok=True)
+
+# Updated index.html
+about_html = """
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Point Zero Productions</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Point Zero Logo" class="logo" />
+    <nav>
+      <a href="#about">About</a>
+      <a href="#music">Music</a>
+      <a href="#shows">Shows</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <h2>Welcome to PointZeroProductions</h2>
+    <p>Alternative rock from the edge of nothing.</p>
+  </section>
+
+  <section id="about">
+    <h2>About Point Zero</h2>
+    <p>
+      Point Zero is a genre-blending force formed from the ashes of static and silence. Known for our raw energy, 
+      heavy riffs, and immersive soundscapes, we fuse elements of alternative rock, electronic tones, and emotional storytelling. 
+      Based in [Your City], our mission is to shake speakers and souls.
+    </p>
+    <p>
+      Whether it's through haunting melodies or hard-hitting live sets, we aim to connect deeply with every listener. 
+      Join us at the edge of nothing — welcome to Point Zero.
+    </p>
+  </section>
+
+  <section id="music">
+    <h1 class="music-title">POINT ZERO MUSIC</h1>
+    <h2>Latest Tracks</h2>
+    <ul>
+      <li><strong>Gravity Falls</strong> – Stream on <a href="#">Spotify</a></li>
+      <li><strong>Empty Echoes</strong> – Watch on <a href="#">YouTube</a></li>
+    </ul>
+  </section>
+
+  <section id="shows">
+    <h2>Upcoming Shows</h2>
+    <p>No shows announced yet — stay tuned!</p>
+  </section>
+
+  <section id="contact">
+    <h2>Get in Touch</h2>
+    <p>Email us at: <a href="mailto:pointzero@email.com">pointzero@email.com</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 PointZeroProductions</p>
+  </footer>
+</body>
+</html>
+"""
+
+# Updated CSS with about section
+about_css = """
+body {
+  margin: 0;
+  font-family: 'Arial Black', sans-serif;
+  background-color: #0d0d0d;
+  color: #e6e6e6;
+}
+
+header {
+  background-color: #111;
+  padding: 1em 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #333;
+}
+
+.logo {
+  height: 60px;
+  filter: grayscale(100%) brightness(120%);
+}
+
+nav a {
+  color: #e6e6e6;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #ccc;
+}
+
+section {
+  padding: 2em;
+  border-bottom: 1px solid #222;
+}
+
+#hero {
+  text-align: center;
+  background-color: #1a1a1a;
+  padding: 4em 2em;
+}
+
+.music-title {
+  background-color: #000;
+  color: #fff;
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  padding: 0.5em;
+  margin-bottom: 1em;
+}
+
+#about {
+  padding: 3em 2em;
+  background-color: #121212;
+  color: #fff;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: auto;
+}
+
+#about h2 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+  text-align: center;
+  font-weight: bold;
+  color: #f2f2f2;
+}
+
+#about p {
+  font-size: 1.1em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 1em;
+  background-color: #111;
+  border-top: 1px solid #333;
+}
+"""
+
+# Save HTML and CSS
+with open(os.path.join(about_dir, "index.html"), "w") as f:
+    f.write(about_html.strip())
+
+with open(os.path.join(about_dir, "style.css"), "w") as f:
+    f.write(about_css.strip())
+
+# Copy or simulate logo
+logo_path = os.path.join(about_dir, "logo.png")
+with open(logo_path, "wb") as f:
+    f.write(b"\x89PNG\r\n\x1a\n")  # Simple PNG header
+
+# Create zip
+about_zip_path = "/mnt/data/pointzeroproductions_about.zip"
+with ZipFile(about_zip_path, "w") as zipf:
+    for foldername, subfolders, filenames in os.walk(about_dir):
+        for filename in filenames:
+            file_path = os.path.join(foldername, filename)
+            arcname = os.path.relpath(file_path, about_dir)
+            zipf.write(file_path, arcname)
+
+about_zip_path
