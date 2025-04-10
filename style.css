@@ -1,32 +1,33 @@
 
 body {
-    margin: 0;
-    padding: 0;
     background-color: #000;
-    color: #fff;
+    color: white;
     font-family: Arial, sans-serif;
     text-align: center;
+    padding: 20px;
 }
-.site-title {
-    font-size: 2em;
-    font-weight: bold;
-    margin-top: 20px;
-}
-nav {
-    margin: 20px;
-}
-nav a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 10px;
-    font-weight: bold;
-}
-nav a:hover {
-    text-decoration: underline;
-}
-.full-width-logo {
-    width: 100%;
-    height: auto;
+
+.logo-container img {
+    max-width: 300px;
+    margin: 20px auto;
     display: block;
-    margin: 20px 0;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+#about {
+    margin-top: 40px;
+}
+
+#about h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+#about p {
+    font-size: 1.2em;
+    line-height: 1.6;
 }
