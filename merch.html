@@ -1,74 +1,17 @@
 
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>POINTZERO MERCH</title>
-    <style>
-        body {
-            background-color: black;
-            color: white;
-            font-family: Arial, sans-serif;
-            margin: 0;
-        }
-        nav {
-            background-color: #111;
-            padding: 1rem;
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-size: 1.2rem;
-        }
-        .merch-container {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            padding: 2rem;
-        }
-        .merch-item {
-            width: 300px;
-            background: #1a1a1a;
-            border-radius: 10px;
-            margin: 20px;
-            padding: 20px;
-            text-align: center;
-        }
-        .merch-item img {
-            width: 100%;
-            border-radius: 8px;
-        }
-        .quick-view {
-            margin-top: 10px;
-            background: transparent;
-            border: 1px solid white;
-            color: white;
-            padding: 10px;
-            cursor: pointer;
-        }
-    </style>
-</head>
+<html><head><meta charset="UTF-8"><title>POINTZERO MERCH</title><link rel="stylesheet" href="styles.css"></head>
 <body>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="merch.html">Merch</a>
-    </nav>
-    <div class="merch-container">
-        <div class="merch-item">
-            <img src="tshirt-front.jpg" alt="T-shirt Front">
-            <form action="tshirt.html">
-                <button class="quick-view">QUICK VIEW</button>
-            </form>
-        </div>
-        <div class="merch-item">
-            <img src="bracelets.jpg" alt="Bracelets">
-            <form action="bracelets.html">
-                <button class="quick-view">QUICK VIEW</button>
-            </form>
-        </div>
-    </div>
+<nav><a href="index.html">Home</a><a href="about.html">About</a><a href="merch.html">Merch</a><a href="contact.html">Contact</a></nav>
+<main class="products">
+  <div class="product">
+    <img src="shirt-front.png" alt="Shirt Front">
+    <form action="shirt.html"><button class="quick-view">QUICK VIEW</button></form>
+  </div>
+  <div class="product">
+    <img src="bracelets.jpg" alt="Bracelets">
+    <form action="bracelets.html"><button class="quick-view">QUICK VIEW</button></form>
+  </div>
+</main>
 </body>
 </html>
