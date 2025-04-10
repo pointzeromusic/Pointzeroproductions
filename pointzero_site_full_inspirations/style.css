@@ -1,0 +1,32 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+.site-title {
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 20px;
+}
+nav {
+    margin: 20px;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+.full-width-logo {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px 0;
+}
